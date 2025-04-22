@@ -51,11 +51,23 @@ Step 4: Testing with Swagger
 Open http://127.0.0.1:8000/docs to interact with the API using Swagger UI.
 
 Test each endpoint (GET, POST, PUT, DELETE) to ensure the system works as expected.
+## Environment Variables
+#This project uses a .env file to store sensitive information such as the database connection credentials. Example:
+DB_HOST=localhost  
+DB_USER=root  
+DB_PASSWORD=yourpassword  
+DB_NAME=dairymanagement
+To run the project locally, create a .env file in the root of the API folder and add your own credentials. This file is not included in the repo for security reasons.
+
+.gitignore
+The .gitignore file is used to prevent sensitive or unnecessary files from being pushed to GitHub.
+It includes:  .env
 
 Question 1 - Database Setup
 A well-commented .sql file is provided in the repository. This file is used to set up the database and create the buyers table.
 ERD (Entity Relationship Diagram)
-[Insert a screenshot of your ERD or a link to it if hosted online.]
+
+![ERD diagram  of dairy management system](https://github.com/user-attachments/assets/9de6dcaf-70a6-47dd-83fd-1426078dcbe1)
 
 Question 2 - Source Code Files
 All source code files, including the FastAPI code and SQL scripts, are included in this repository under the appropriate folders.
