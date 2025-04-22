@@ -51,6 +51,17 @@ Step 4: Testing with Swagger
 Open http://127.0.0.1:8000/docs to interact with the API using Swagger UI.
 
 Test each endpoint (GET, POST, PUT, DELETE) to ensure the system works as expected.
+## Environment Variables
+#This project uses a .env file to store sensitive information such as the database connection credentials. Example:
+DB_HOST=localhost  
+DB_USER=root  
+DB_PASSWORD=yourpassword  
+DB_NAME=dairymanagement
+To run the project locally, create a .env file in the root of the API folder and add your own credentials. This file is not included in the repo for security reasons.
+
+.gitignore
+The .gitignore file is used to prevent sensitive or unnecessary files from being pushed to GitHub.
+It includes:  .env
 
 Question 1 - Database Setup
 A well-commented .sql file is provided in the repository. This file is used to set up the database and create the buyers table.
