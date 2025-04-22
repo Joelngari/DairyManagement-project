@@ -1,4 +1,4 @@
-
+mv
 -- Create the database (if not already created)
 CREATE DATABASE IF NOT EXISTS DairyManagement;
 USE DairyManagement;
@@ -61,6 +61,7 @@ CREATE TABLE Milk_Sales (
 -- Farmers table
 INSERT INTO Farmers (name, phone, location) VALUES
 ('Joel Ngari', '0712345678', 'Embu'),
+
 ('Wanjiku Kariuki', '0723456789', 'Nyeri');
 
 -- Cows table

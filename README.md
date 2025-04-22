@@ -21,12 +21,14 @@ cd dairy-management-api
 
 Activate the virtual environment:
 
-   For Windows:   .\venv\Scripts\activat
+   For Windows:   .\venv\Scripts\activate
    For macOS/Linux:  source venv/bin/activate
 
 
 ### Step 1: Install Dependencies
 After activating the virtual environment, install the required Python packages by running: pip install -r requirements.txt
+## Install mysql-connector-python inside your venv:
+Run this command while the (venv) is active:pip install mysql-connector-python
 
 
 ### Step 2: Set Up the Database
