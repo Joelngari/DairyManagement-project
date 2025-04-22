@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from db import get_db_connection
+from DairyManagement_API.db import get_db_connection 
 
 app = FastAPI()
+
 
 # Pydantic model for Buyer
 class Buyer(BaseModel):
